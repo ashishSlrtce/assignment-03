@@ -1,0 +1,101 @@
+<head>
+  <meta charset="utf-8">
+   
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="parallax.js"></script>
+
+   <style type="text/css">
+
+
+/*  parallax styling       */
+.parallax-window {
+    min-height: 200px;
+    background: transparent;
+
+}
+body{
+	background-image:url("http://wallpoper.com/images/00/31/33/51/black-background_00313351.jpg");
+
+}
+/*heading under jumbotron to enlarge the text*/
+.jumbotron{
+	text-align:center;
+	font-weight: bold;
+	font-family: "Times New Roman";
+    background-color:#9999ff;
+
+}
+#profileInfo{
+  color:white;
+	font-family:verdana;
+font-weight: bold;
+ text-shadow: 2px 2px 5px blue;
+}
+#postsInfo{
+	color:white;
+font-family:verdana;
+font-weight: bold;
+ text-shadow: 2px 2px 5px blue;
+}
+
+/*Loader format*/
+.loader {
+	position:absolute; top:80%; left:50%;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 5em;
+  height: 5em;
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+   </style>
+</head>
+
+
+
+
+<body>
+<div class="parallax-window" data-parallax="scroll" data-image-src="http://www.socialmediaexaminer.com/wp-content/uploads/2013/07/dh-social-media-buttons-istock-image-25015338.jpg"></div>
+
+<div class="jumbotron">
+<h1>socialRoom</h1></div>
+
+
+<!-- Main container -->
+<div class="container">  
+<div class="row">
+<div class="col-lg-6">    
+                                   <!-- buttons -->
+  <button type="button" id="btn1" class="btn btn-info btn-block active" data-toggle="collapse" data-target="#profileInfo">Profile info</button>
+<div id="profileInfo"></div>
+</div>
+<div class="col-lg-6">
+<button type="button" id="btn2" class="btn btn-info btn-block active" data-toggle="collapse" data-target="#postsInfo">Recent Posts</button>
+<div id="postsInfo"></div>
+
+</div>
+</div>
+
+
+</div>
+<!-- Loader declared -->
+<div class="loader"></div>
+
+
+  
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="javaScript.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+
+</body>
+</html>
